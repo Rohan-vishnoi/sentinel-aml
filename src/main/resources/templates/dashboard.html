@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Sentinel AML Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 24px; background: #f7f8fb; color: #1f2937; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 32px; background: #fff; }
+        th, td { border: 1px solid #d1d5db; padding: 8px 10px; text-align: left; }
+        th { background: #e5e7eb; }
+        h1, h2 { margin-bottom: 12px; }
+        .card { background: #fff; padding: 16px; border: 1px solid #d1d5db; border-radius: 8px; margin-bottom: 24px; }
+    </style>
+</head>
+<body>
+<h1>Sentinel AML Dashboard</h1>
+<div class="card">
+    <h2>Alerts</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Risk</th><th>Status</th><th>Customer</th><th>Account</th><th>Rule</th><th>Evidence</th><th>Explanation</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="alert : ${alerts}">
+            <td th:text="${alert.riskScore()}"></td>
+            <td th:text="${alert.status()}"></td>
+            <td th:text="${alert.customerNameMasked()}"></td>
+            <td th:text="${alert.accountId()}"></td>
+            <td th:text="${alert.primaryRule()}"></td>
+            <td th:text="${alert.evidenceCsv()}"></td>
+            <td th:text="${alert.explanation()}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="card">
+    <h2>Cases</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Case</th><th>Status</th><th>Alert</th><th>Customer</th><th>Analyst</th><th>Disposition</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="caseFile : ${cases}">
+            <td th:text="${caseFile.caseNumber()}"></td>
+            <td th:text="${caseFile.status()}"></td>
+            <td th:text="${caseFile.alertId()}"></td>
+            <td th:text="${caseFile.customerId()}"></td>
+            <td th:text="${caseFile.assignedAnalyst()}"></td>
+            <td th:text="${caseFile.dispositionReason()}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

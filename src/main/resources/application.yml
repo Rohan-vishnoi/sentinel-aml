@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:sentinel;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+  thymeleaf:
+    cache: false
+  h2:
+    console:
+      enabled: true
+
+server:
+  port: 8080
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+sentinel:
+  security:
+    admin-username: ${SENTINEL_ADMIN_USER:admin}
+    admin-password: ${SENTINEL_ADMIN_PASSWORD:admin123}
+    analyst-username: ${SENTINEL_ANALYST_USER:analyst}
+    analyst-password: ${SENTINEL_ANALYST_PASSWORD:analyst123}
+  base-currency: INR
+  seed-enabled: true
