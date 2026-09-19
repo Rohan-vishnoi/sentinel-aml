@@ -44,6 +44,9 @@ Rule thresholds live in the `rule_configs` table and can be updated through `POS
 ## Seed data
 The app loads synthetic customer, account, exchange-rate, rule, and transaction data from `src/main/resources/data/` at startup.
 
+## Design docs
+- `docs/design.md` contains the HLD and LLD for the platform.
+
 ## Demo walkthrough
 
 ### 1. Start the app
