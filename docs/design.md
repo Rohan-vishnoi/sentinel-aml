@@ -1,5 +1,6 @@
 # Sentinel AML Design Document
-
+![Screenshot 2026-09-19 at 12.37.59 PM.png](../../../Desktop/Screenshot%202026-09-19%20at%2012.37.59%E2%80%AFPM.png)
+![Screenshot 2026-09-19 at 12.37.19 PM.png](../../../Desktop/Screenshot%202026-09-19%20at%2012.37.19%E2%80%AFPM.png)
 ## 1. High-Level Design (HLD)
 
 ### 1.1 Goal

@@ -5,6 +5,7 @@
 /Users/rohanvishnoi/Downloads/sentinel-aml/src/main/java/com/sentinelaml/controller/AlertController.java
 /Users/rohanvishnoi/Downloads/sentinel-aml/src/main/java/com/sentinelaml/controller/CaseController.java
 /Users/rohanvishnoi/Downloads/sentinel-aml/src/main/java/com/sentinelaml/controller/DashboardController.java
+/Users/rohanvishnoi/Downloads/sentinel-aml/src/main/java/com/sentinelaml/controller/HomeController.java
 /Users/rohanvishnoi/Downloads/sentinel-aml/src/main/java/com/sentinelaml/controller/IngestionController.java
 /Users/rohanvishnoi/Downloads/sentinel-aml/src/main/java/com/sentinelaml/controller/TransactionController.java
 /Users/rohanvishnoi/Downloads/sentinel-aml/src/main/java/com/sentinelaml/domain/Account.java

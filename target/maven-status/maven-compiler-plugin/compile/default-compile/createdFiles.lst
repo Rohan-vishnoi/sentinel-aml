@@ -26,6 +26,7 @@ com/sentinelaml/service/CurrencyConversionService.class
 com/sentinelaml/domain/TransactionType.class
 com/sentinelaml/domain/AuditedEntity.class
 com/sentinelaml/controller/IngestionController.class
+com/sentinelaml/controller/HomeController.class
 com/sentinelaml/repository/ExchangeRateRepository.class
 com/sentinelaml/dto/DashboardView.class
 com/sentinelaml/repository/AccountRepository.class

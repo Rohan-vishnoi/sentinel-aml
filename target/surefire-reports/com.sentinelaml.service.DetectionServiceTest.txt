@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.sentinelaml.service.DetectionServiceTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.724 s -- in com.sentinelaml.service.DetectionServiceTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.704 s -- in com.sentinelaml.service.DetectionServiceTest
